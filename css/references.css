@@ -1,0 +1,85 @@
+/* ------------------------------------------------------------ *\
+	Section References
+\* ------------------------------------------------------------ */
+
+.section-references {
+	padding-top: 240px;
+}
+.section-references .section__head {
+	width: 100%;
+	background-color: #e4af18;
+	border-radius: 15px;
+	padding: 40px 50px;
+	color: #00264d;
+	margin-bottom: 70px;
+}
+
+.section-references .section__title {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 25px;
+}
+
+.section-references .section__form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.section-references .section__form a {
+	color: #fff;
+	font-weight: 500;
+	transition: color .3s;
+}
+
+.section-references .section__form a:hover {
+	color: #00264d;
+}
+
+.section-references .section__content {
+	background: #e4af18;
+	padding: 20px;
+}
+
+.section-references--alt .section__title {
+	margin-bottom: 0;
+}
+
+/* ------------------------------------------------------------ *\
+	Form References
+\* ------------------------------------------------------------ */
+
+.form {
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.form input[type="text"] {
+	height: 60px;
+	border: 1px solid #00264d;
+	outline: none;
+	padding: 15px 20px;
+	border-radius: 30px;
+	min-width: 600px;
+	background-color: rgba(245, 245, 245, .9);
+	color: #00264d;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.form input[type="submit"] {
+	width: 100%;
+	font-size: 18px;
+	background-color: #00264d;
+	border-color: #00264d;
+}
+
+.form input[type="submit"]:hover {
+	background-color: transparent;
+	color: #00264d;
+}
+
+.form .form__row + .form__row {
+	margin-left: 40px;
+}

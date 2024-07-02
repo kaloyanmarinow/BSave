@@ -1,0 +1,122 @@
+/* ------------------------------------------------------------ *\
+	Section Contact
+\* ------------------------------------------------------------ */
+
+.section-contacts {
+	height: 93vh;
+}
+
+.section-contacts--alt {
+	height: 100vh;
+}
+
+.section-contacts h2 {
+	font-size: 60px;
+	max-width: 400px;
+	margin: 0 0 0 auto;
+}
+
+.section-contacts .section__shell {
+	display: flex;
+	position: relative;
+	z-index: 2;
+	height: 100%;
+}
+
+.section-contacts .section__shell--alt {
+	justify-content: space-between;
+}
+
+.section-contacts .section__title {
+	width: 45%;
+	color: #fff;
+	align-self: center;
+	text-align: right;
+	padding-right: 100px;
+}
+
+.section-contacts--alt .section__title {
+	align-self: flex-end;
+	padding-bottom: 130px;
+	text-align: center;
+}
+
+.section-contacts--alt .section__title h2 {
+	max-width: fit-content;
+	margin: auto;
+	display: flex;
+	align-items: center;
+}
+
+.section-contacts--alt .section__title span {
+	font-family: 'Gochi Hand', cursive;
+	background-color: #00264d;
+	border-radius: 30px;
+	padding: 7px 20px 5px;
+	display: block;
+	margin-left: 15px;
+}
+
+.section-contacts--alt .section__title span::first-letter {
+	color: #e4af18;
+}
+
+.section-contacts .section__info {
+	width: 55%;
+	padding-top: 260px;
+}
+
+.section-contacts .section__entry {
+	color: #e4af18;
+	font-size: 24px;
+}
+
+.section-contacts .section__entry + .section__entry {
+	margin-top: 30px;
+}
+
+.section-contacts .section__entry p {
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.section-contacts .section__entry a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	display: block;
+	font-weight: 500;
+	cursor: pointer;
+	transition: color .3s;
+}
+
+.section-contacts .section__entry a:hover {
+	color: #e4af18;
+}
+
+.section-contacts .section__entry a > i {
+	width: 25px;
+	margin-right: 5px;
+	display: inline-block;
+}
+
+.section-contacts .section__entry a + a {
+	margin-top: 7px;
+}
+
+.section-contacts .section__content {
+	padding-top: 260px;
+	color: #fff;
+	font-size: 21px;
+	font-weight: 500;
+	width: 45%;
+	line-height: 1.5;
+}
+.section-contacts .section__content p + p {
+	margin-top: 30px;
+}
+
+.section-contacts .section__content p:first-child {
+	color: #e4af18;
+	font-weight: 600;
+}

@@ -1,0 +1,21 @@
+/* ------------------------------------------------------------ *\
+	Hero
+\* ------------------------------------------------------------ */
+
+.hero {
+	height: 100vh;
+	color: #fff;
+	max-width: 41%;
+	display: flex; 
+	align-items: center;
+	padding-top: 210px; 
+}
+
+.hero h1 {
+	font-size: 64px; 
+	margin-bottom: 40px; 
+}
+
+.hero a + a {
+	margin-left: 35px; 
+}

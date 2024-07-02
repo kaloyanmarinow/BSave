@@ -1,0 +1,246 @@
+/* ------------------------------------------------------------ *\
+	Header
+\* ------------------------------------------------------------ */
+
+.header {
+	padding: 30px 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100; 
+}
+
+.header .header__balance {
+	background-color: #00264d;
+	color: #fff;
+	padding: 12px 12px;
+	border-radius: 30px;
+	font-weight: 600;
+	font-size: 20px;
+	margin-right: 30px;
+	margin-bottom: -10px;
+}
+
+.header .header__exit {
+	margin-left: 20px;
+}
+
+.header .header__exit button {
+	transition: opacity .3s;
+	background-color: transparent;
+	outline: none;
+	border: none;
+}
+
+.header .header__exit button:hover {
+	opacity: .7;
+}
+
+.header .header__exit img {
+	max-width: 30px;
+}
+
+.header .header__balance--alt {
+	background-color: #e4af18;
+	color: #00264d;
+}
+
+.header .header__aside {
+	position: absolute; 
+	top: 0;
+	right: 0;
+	z-index: -1;
+	height: 93vh;
+	width: 66%;
+	min-width: 1030px;
+	text-align: right; 
+}
+
+.header .header__aside img {
+	height: 100%;
+	width: 100%;
+}
+
+.header h1 {
+	color: #fff;
+	font-family: 'Gochi Hand', cursive;
+	font-size: 70px; 
+	line-height: 1;
+	letter-spacing: 0.01em; 
+}
+
+.header h1 > span {
+	color: #e4af18;
+}
+
+.header .header__logo img {
+	max-width: 150px;
+} 
+
+.header .header__shell {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header .header__menu {
+	margin-left: 20px; 
+	display: flex; 
+	align-items: flex-end;
+	position: relative; 
+	z-index: 1;
+}
+
+.header .header__nav {
+	margin-right: 30px; 
+}
+
+.header .header__actions img {
+	max-width: 30px;
+}
+
+.header .header__actions a {
+	transition: opacity .3s;
+}
+
+.header .header__actions a:hover {
+	opacity: .7;
+}
+
+.header--alt {
+	position: relative;
+}
+
+.header--alt .header__aside {
+	display: none;
+}
+
+.header--alt .nav > ul > li > a {
+	color: #e4af18;
+}
+
+.header--alt .nav > ul > li > a:hover {
+	color: #fff;
+}
+
+.header--alt .menu-item-has-children > ul {
+	background-color: #e4af18;
+}
+
+.header--alt .menu-item-has-children > ul > li > a {
+	color: #00264d;
+}
+
+.header--alt .menu-item-has-children > ul > li > a:hover {
+	color: #fff;
+}
+
+.header--alt .menu-item-has-children > ul > li + li {
+	border-color: #00264d; 
+}
+
+.header--contacts .header__aside {
+	display: none;
+}
+
+.header--about {
+	position: absolute;
+}
+
+/* ------------------------------------------------------------ *\
+	Logo
+\* ------------------------------------------------------------ */
+
+.logo {
+	display: flex;
+	align-items: flex-end;
+}
+
+/* ------------------------------------------------------------ *\
+	Nav
+\* ------------------------------------------------------------ */
+
+.nav ul {
+	display: flex; 
+	align-items: center;
+	font-weight: 600; 	
+	font-size: 24px; 
+}
+
+.nav li.is-hidden {
+	opacity: .6;
+	pointer-events: none;
+}
+
+.nav li + li {
+	margin-left: 30px; 
+}
+
+.nav a {
+	color: #00264d;
+	transition: color .3s;
+}
+
+.nav a:hover {
+	color: #fff;
+}
+
+/* ------------------------------------------------------------ *\
+	Menu Item Has Children
+\* ------------------------------------------------------------ */
+
+.menu-item-has-children {
+	position: relative; 
+}
+
+.menu-item-has-children a {
+	opacity: 1;
+}
+
+.menu-item-has-children a:hover {
+	color: #fff;
+}
+
+.menu-item-has-children:hover > ul {
+	opacity: 1;
+	visibility: visible;
+}
+
+.menu-item-has-children > ul {
+	position: absolute; 
+	top: 115%;
+	left: 50%;
+	margin: auto;
+	transform: translateX(-50%);
+	width: 250px;
+	font-size: 18px; 
+	flex-direction: column;
+	text-align: center; 
+	background-color: #00264d; 
+	border-radius: 20px;
+	padding: 5px 0;
+	transition: visibility .3s, opacity .3s;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.menu-item-has-children > ul > li {
+	width: 100%;
+}
+
+.menu-item-has-children > ul > li + li {
+	margin-left: 0; 
+	border-top: 1px solid #e4af18; 
+}
+
+.menu-item-has-children > ul > li > a {
+	padding: 15px 20px;
+	color: #fff;
+	display: block; 
+	transition: color .3s;
+}
+
+.menu-item-has-children > ul > li > a:hover {
+	color: #e4af18;
+}

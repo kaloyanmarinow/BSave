@@ -1,0 +1,123 @@
+
+/* ------------------------------------------------------------ *\
+	Section
+\* ------------------------------------------------------------ */
+
+.section {
+	padding-top: 210px;
+	height: 100vh;
+	position: relative;
+}
+
+.section .section__image {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	max-width: 400px;
+}
+
+.section .section__shell {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.section .section__title {
+	padding-top: 40px;
+	padding-right: 50px;
+	color: #e4af18;
+	max-width: 390px;
+}
+
+.section .section__title h2 {
+	font-size: 60px;
+}
+
+/* ------------------------------------------------------------ *\
+	Form Add
+\* ------------------------------------------------------------ */
+
+.form-add {
+	margin-bottom: 10px;
+	max-width: 520px;
+	margin: 0 0 0 auto;
+	background-color: #e4af18;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 15px;
+	padding: 50px 30px;
+}
+
+.form-add input[type="text"],
+.form-add select,
+.form-add textarea,
+.form-add input[type="date"] {
+	height: 55px;
+	border: 1px solid #00264d;
+	outline: none;
+	padding: 15px 20px;
+	border-radius: 5px;
+	min-width: 450px;
+	background-color: rgba(245, 245, 245, .9);
+	color: #00264d;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.form-add textarea {
+	resize: none;
+	height: 140px;
+	border-radius: 6px;
+}
+
+.form-add .form__row + .form__row {
+	margin-top: 15px;
+}
+
+.form-add input[type="submit"] {
+	width: 100%;
+	font-size: 18px;
+	background-color: #00264d;
+	border: 1px solid #00264d;
+	color: #e4af18;
+	font-weight: 600;
+	outline: none;
+	border-radius: 5px;
+	padding: 12px;
+	transition: background-color .3s, color .3s;
+}
+
+.form-add input[type="submit"]:hover {
+	background-color: transparent;
+	color: #00264d;
+}
+
+.form-add .form__row--alt {
+	display: none;
+}
+
+.form-add .form__row--alt input[type="text"] {
+	height: 45px;
+	min-width: 355px;
+	font-size: 16px;
+}
+
+.form-add .form__row--alt input[type="submit"] {
+	font-size: 0;
+	height: 45px;
+	width: 45px;
+	position: relative;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	background-image: url(images/plus.png);
+	background-size: 25px 25px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.form-add .form__row--alt.is-active {
+	display: flex;
+	align-items: center;
+}
